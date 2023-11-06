@@ -24,6 +24,7 @@ if ( isset($_POST["submit"]) && $_POST["submit"] == "save" ) {
 
 <h1>Muuda</h1> <?= $id;?> <?= $book["title"]; ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,13 +40,12 @@ if ( isset($_POST["submit"]) && $_POST["submit"] == "save" ) {
 <button type="submit" name="submit"  value="save">Salvesta</button>
 </form>
 
-
 <form action="./edit.php?id=<?= $id; ?>" method="post">
-Aasta: <input type="text" name="title"  value="<?= $book["title"];?>">
+   Autor:  <input type="text" name="title" value="<?= $book[""];?>">
    <br><br>
 <button type="submit" name="submit"  value="save">Salvesta</button>
 </form>
 
+
 </body>
 </html>
-
