@@ -27,6 +27,20 @@ while ($row = $stmt->fetch()) {
     
     </li>;
 
+
+
+    <?php
+while ($row = $stmt->fetch()) {
+    ?> 
+    <select name="" id="">
+    <li>
+        <a href="book.php?id=<?= $row["id"]; ?>">
+        <?=$row['first_name']; ?> <?= $row["last_name"]; ?>
+        
+    </a>
+    
+    </li>;
+    </select>
 <?php    
 }
 ?>
