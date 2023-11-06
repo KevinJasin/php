@@ -36,13 +36,12 @@ if ( isset($_POST["submit"]) && $_POST["submit"] == "save" ) {
 
 <form action="./edit.php?id=<?= $id; ?>" method="post">
    Pealkiri:  <input type="text" name="title" value="<?= $book["title"];?>">
-   <br><br>
-<button type="submit" name="submit"  value="save">Salvesta</button>
-</form>
-
-<form action="./edit.php?id=<?= $id; ?>" method="post">
-   Autor:  <input type="text" name="title" value="<?= $book[""];?>">
-   <br><br>
+   year:  <input type="number" name="year" value="<?= $book["release_date"];?>">
+<select name="type">
+  <option value="new" <?= $book {'type'} == 'new' ? selected="selected=": ''; ?>>uus</option>
+  <option value="used" <?= $book {'type'} == 'used' ? selected="selected=": ''; ?>>kasutatud</option>
+  <option value="ebooks" <?= $book {'type'} == 'ebook' ? selected="selected=": ''; ?>>e raamatud</option>
+</select>
 <button type="submit" name="submit"  value="save">Salvesta</button>
 </form>
 
