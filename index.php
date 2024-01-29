@@ -7,7 +7,7 @@ $search = $_GET["q"];
 var_dump($search);
 
 
-$stmt = $pdo->query('SELECT * FROM books WHERE * LIKE %');
+$stmt = $pdo->query('SELECT * FROM books WHERE title LIKE ' '%".$search."%');
 
 
 ?>
